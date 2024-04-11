@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Mahasiswa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Form Mahasiswa</h2>
+        <form id="form-mahasiswa">
+            <label for="nim">NIM :</label>
+            <input type="text" id="nim" name="nim" required placeholder="Masukkan NIM"><br>
+
+            <label for="nama">Nama :</label>
+            <input type="text" id="nama" name="nama" required placeholder="Masukkan Nama"><br>
+
+            <label for="jenis-kelamin">Jenis Kelamin:</label>
+            <select id="jenis-kelamin" name="jenis-kelamin" required>
+                <option value="laki-laki">Laki-laki</option>
+                <option value="perempuan">Perempuan</option>
+            </select><br>
+
+            <label for="agama">Agama :</label>
+            <input type="text" id="agama" name="agama" required placeholder="Masukkan Agama"><br>
+
+            <label for="status">Status : </label>
+            <select id="status" name="status" required>
+                <option value="aktif">Mahasiswa Aktif</option>
+                <option value="non-aktif">Mahasiswa Non-Aktif</option>
+            </select><br>
+
+            <label for="jurusan">Jurusan :</label>
+            <input type="text" id="jurusan" name="jurusan" required placeholder="Masukkan Jurusan"><br>
+
+            <label for="komentar">Komentar :</label>
+            <textarea id="komentar" name="komentar" placeholder="Ketik komentar"></textarea><br>
+
+            <div id="output"></div>
+            <button type="submit" id="submit-btn">Kirim</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

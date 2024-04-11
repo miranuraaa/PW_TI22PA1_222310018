@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Tabungan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Kalkulator Tabungan</h2>
+        <form id="form-input">
+            <label for="saldo">Saldo Awal (Rp):</label>
+            <input type="number" id="saldo" required min="0"><br>
+
+            <label for="bunga">Bunga (%):</label>
+            <input type="number" id="bunga" required min="0"><br>
+
+            <label for="waktu">Jangka Waktu (Bulan):</label>
+            <input type="number" id="waktu" required min="1"><br>
+
+            <button type="button" id="hitung-btn">Hitung</button>
+        </form>
+
+        <div id="output-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
